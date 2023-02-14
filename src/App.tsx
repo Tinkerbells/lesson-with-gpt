@@ -6,6 +6,7 @@ import { generateRequest } from "./utils/generateRequest";
 
 const App = () => {
   const [answer, setAnswer] = useState("");
+  const [weeks, setWeeks] = useState([{}]);
   const [isLoading, setIsLoading] = useState(false);
   const handleSumbit = async (e: React.SyntheticEvent) => {
     setIsLoading(true);
