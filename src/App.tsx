@@ -22,6 +22,7 @@ const App = () => {
       console.log(completion.data.choices[0].text!!);
       setAnswer(completion.data.choices[0].text!!);
     } catch (err) {
+      setIsLoading(false);
       console.log("fetch completion", err);
     }
   };
